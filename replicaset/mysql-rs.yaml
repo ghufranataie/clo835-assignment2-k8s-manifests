@@ -20,7 +20,7 @@ spec:
             - containerPort: 3306
           env:
             - name: MYSQL_ROOT_PASSWORD
-              value: "Gh@4615123"
+              value: "password"
             - name: MYSQL_DATABASE
               value: "employees"
           volumeMounts:
