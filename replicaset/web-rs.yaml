@@ -17,3 +17,4 @@ spec:
         image: 524714122815.dkr.ecr.us-east-1.amazonaws.com/app:v1
         ports:
         - containerPort: 8080
+        
