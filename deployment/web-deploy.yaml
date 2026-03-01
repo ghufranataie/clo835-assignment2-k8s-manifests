@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: web-deployment
+  namespace: web
 spec:
   replicas: 3
   selector:
@@ -17,4 +18,5 @@ spec:
         image: 524714122815.dkr.ecr.us-east-1.amazonaws.com/app:v1
         ports:
         - containerPort: 8080
-        
+      imagePullSecrets:
+        - name: ecr-registry
