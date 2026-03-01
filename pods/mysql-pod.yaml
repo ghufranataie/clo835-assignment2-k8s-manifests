@@ -14,4 +14,4 @@ spec:
       - name: MYSQL_ROOT_PASSWORD
         value: "Gh@4615123"
   imagePullSecrets:
-    - name: ecr-registryx
+    - name: ecr-registry
