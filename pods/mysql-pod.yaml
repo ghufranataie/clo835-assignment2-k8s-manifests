@@ -10,8 +10,8 @@ spec:
     image: 524714122815.dkr.ecr.us-east-1.amazonaws.com/db:latest
     ports:
     - containerPort: 3306
-  env:
-    - name: MYSQL_ROOT_PASSWORD
-      value: "Gh@4615123"
+    env:
+      - name: MYSQL_ROOT_PASSWORD
+        value: "Gh@4615123"
   imagePullSecrets:
     - name: ecr-registryx
