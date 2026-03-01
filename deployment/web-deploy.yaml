@@ -26,14 +26,8 @@ spec:
         - name: DB_NAME
           value: "employees"
         - name: DB_USER
-          valueFrom:
-            secretKeyRef:
-              name: mysql-secret
-              key: 3ufran
+          value: "root"
         - name: DB_PASSWORD
-          valueFrom:
-            secretKeyRef:
-              name: mysql-secret
-              key: password
+          value: "password"
       imagePullSecrets:
         - name: ecr-registry
