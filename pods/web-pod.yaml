@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: web-pod
+  labels:
+    app: employees
+spec:
+  containers:
+  - name: web
+    image: 524714122815.dkr.ecr.us-east-1.amazonaws.com/app:v1
+    ports:
+    - containerPort: 8080
