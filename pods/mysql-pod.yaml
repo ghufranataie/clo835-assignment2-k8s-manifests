@@ -10,4 +10,5 @@ spec:
     image: 524714122815.dkr.ecr.us-east-1.amazonaws.com/db:latest
     ports:
     - containerPort: 3306
-    
+  imagePullSecrets:
+    - name: ecr-registry
