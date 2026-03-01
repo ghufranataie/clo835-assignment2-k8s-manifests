@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
   name: mysql-rs
+  namespace: mysql
 spec:
   replicas: 1
   selector:
@@ -20,6 +21,8 @@ spec:
           env:
             - name: MYSQL_ROOT_PASSWORD
               value: "Gh@4615123"
+            - name: MYSQL_DATABASE
+              value: "employees"
           volumeMounts:
             - name: mysql-storage
               mountPath: /var/lib/mysql

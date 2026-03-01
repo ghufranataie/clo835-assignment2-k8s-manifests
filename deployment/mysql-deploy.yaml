@@ -21,6 +21,8 @@ spec:
           env:
             - name: MYSQL_ROOT_PASSWORD
               value: "Gh@4615123"
+            - name: MYSQL_DATABASE
+              value: "employees"
           volumeMounts:
             - name: mysql-persistent-storage
               mountPath: /var/lib/mysql
