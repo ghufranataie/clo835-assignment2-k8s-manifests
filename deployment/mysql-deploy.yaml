@@ -30,3 +30,5 @@ spec:
         - name: mysql-persistent-storage
           persistentVolumeClaim:
             claimName: mysql-pvc
+      imagePullSecrets:
+        - name: ecr-secret
