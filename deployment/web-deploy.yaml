@@ -20,14 +20,14 @@ spec:
         - containerPort: 8080
         env:
         - name: DBHOST
-          value: "mysql-service.mysql.svc.cluster.local"   # points to MySQL service
+          value: mysql-service.mysql.svc.cluster.local  # points to MySQL service
         - name: DBPORT
           value: "3306"
         - name: DATABASE
-          value: "employees"
+          value: employees
         - name: DBUSER
-          value: "root"
+          value: root
         - name: DBPWD
-          value: "password"
+          value: password
       imagePullSecrets:
         - name: ecr-secret
